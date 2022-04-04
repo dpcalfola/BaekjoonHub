@@ -22,14 +22,15 @@ def eratosthenes(max_: int) -> list:
 
 def goldbach(num: int, prime_list: list):
     mid = num // 2
-
+    diff = num - mid
     while True:
-        diff = num - mid
+
         if prime_list[mid] and prime_list[diff]:
             print(diff, mid)
             break
         else:
             mid += 1
+            diff -= 1
 
 
 T = int(sys.stdin.readline())
