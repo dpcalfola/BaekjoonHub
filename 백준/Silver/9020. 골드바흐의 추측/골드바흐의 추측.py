@@ -34,7 +34,8 @@ def goldbach(num: int, prime_list: list):
 
 
 T = int(sys.stdin.readline())
+primes = eratosthenes(max_int)
 
 for _ in range(T):
     test_case = int(sys.stdin.readline().rstrip())
-    goldbach(test_case, eratosthenes(max_int))
+    goldbach(test_case, primes)
