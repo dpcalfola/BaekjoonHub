@@ -1,4 +1,4 @@
-# [Bronze II] 2진수 8진수 - 1373 
+# [Bronze I] 2진수 8진수 - 1373 
 
 [문제 링크](https://www.acmicpc.net/problem/1373) 
 

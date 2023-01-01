@@ -1,4 +1,4 @@
-# [Silver IV] 수열과 쿼리 38 - 18917 
+# [Silver III] 수열과 쿼리 38 - 18917 
 
 [문제 링크](https://www.acmicpc.net/problem/18917) 
 

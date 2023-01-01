@@ -1,4 +1,4 @@
-# [Bronze V] 파티가 끝나고 난 뒤 - 2845 
+# [Bronze IV] 파티가 끝나고 난 뒤 - 2845 
 
 [문제 링크](https://www.acmicpc.net/problem/2845) 
 
@@ -8,7 +8,7 @@
 
 ### 분류
 
-사칙연산(arithmetic), 구현(implementation), 수학(math)
+구현(implementation), 사칙연산(arithmetic), 수학(math)
 
 ### 문제 설명
 

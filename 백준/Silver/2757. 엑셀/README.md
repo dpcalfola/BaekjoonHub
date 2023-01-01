@@ -8,7 +8,7 @@
 
 ### 분류
 
-구현(implementation), 수학(math), 문자열(string)
+수학(math), 문자열(string)
 
 ### 문제 설명
 

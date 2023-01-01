@@ -1,4 +1,4 @@
-# [Silver IV] LCM - 5347 
+# [Silver V] LCM - 5347 
 
 [문제 링크](https://www.acmicpc.net/problem/5347) 
 

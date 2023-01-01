@@ -1,4 +1,4 @@
-# [Bronze IV] 감정이입 - 14623 
+# [Bronze II] 감정이입 - 14623 
 
 [문제 링크](https://www.acmicpc.net/problem/14623) 
 
