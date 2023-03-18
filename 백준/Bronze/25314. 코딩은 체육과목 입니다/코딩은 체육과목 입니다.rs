@@ -15,10 +15,10 @@ fn main() {
     };
 
     let num_of_long: i16 = num_of_input / 4;
-    
+
     // Declare and initialize
     let mut answer: String = Default::default();
-    
+
     for _i in 0..num_of_long {
         answer += "long ";
     }
