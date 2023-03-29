@@ -1,29 +1,21 @@
 use std::io;
 
 fn main() {
-    let mut input_string = String::new();
-    io::stdin().read_line(&mut input_string).expect("Fail to read line");
+    let mut input_line = String::new();
+    io::stdin().read_line(&mut input_line).unwrap();
 
-    // Convert string to char vector
-    let chars: Vec<char> = input_string.chars().collect();
+    let string = input_line.trim().to_string();
+    let mut new_string = String::new();
 
-    // Iterate chars and convert to upper or lower case and append to result string
-    // and return result string
-    let answer = {
-        let mut result = String::new();
-        for char in chars {
-            if char.is_ascii_uppercase() {
-                let converted = char.to_ascii_lowercase().to_string();
-                result += &converted;
-            }
-            if char.is_ascii_lowercase() {
-                let converted = char.to_ascii_uppercase().to_string();
-                result += &converted;
-            }
+    for cha in string.chars() {
+        if cha.is_ascii_lowercase() {
+            new_string.push(cha.to_ascii_uppercase())
         }
-        result
-    };
+        if cha.is_ascii_uppercase() {
+            new_string.push(cha.to_ascii_lowercase())
+        }
+    }
 
-    // Print answer
-    println!("{}", answer);
+    
+    println!("{}", new_string);
 }
