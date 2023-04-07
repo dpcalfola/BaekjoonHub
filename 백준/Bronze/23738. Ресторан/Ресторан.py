@@ -14,17 +14,14 @@ replacement: dict = {
     "C": "s",
     "Y": "u",
     "X": "h",
-    "A": "a",
-    "K": "k",
-    "M": "m",
-    "O": "o",
-    "T": "t",
 }
 
 answer_string: str = ""
-for i in range(len(input_string)):
-    for key, value in replacement.items():
-        if input_string[i] == key:
-            answer_string += replacement[key]
+
+for cha in input_string:
+    if cha in replacement:
+        answer_string += replacement[cha]
+    else:
+        answer_string += cha.lower()
 
 print(answer_string)
