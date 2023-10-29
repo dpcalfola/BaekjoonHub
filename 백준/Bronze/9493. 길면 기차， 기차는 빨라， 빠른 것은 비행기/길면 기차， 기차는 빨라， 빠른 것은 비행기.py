@@ -9,26 +9,19 @@ def get_arrived_time(distance_km, speed_km) -> float:
     return arrive_time
 
 
-def get_formatted_time(time) -> str:
-    seconds: int = time % 60
-    minutes: int = int(time / 60)
-    hours: int = 0
-
-    if minutes >= 60:
-        hours = int(minutes / 60)
-        minutes = minutes % 60
+def get_formatted_time(time: int) -> str:
+    # time unit -> seconds
 
     # Make 0:00:00 format
-    mm: str = ("0" + str(minutes)) if minutes < 10 else str(minutes)
-    ss: str = ("0" + str(seconds)) if seconds < 10 else str(seconds)
-    hh: str = str(hours)
-    return f'{hh}:{mm}:{ss}'
+    # Use zfill
+    seconds: str = str(time % 60).zfill(2)
+    minutes: str = str((time // 60) % 60).zfill(2)
+    hours: str = str(time // 3600).zfill(1)
+    return f'{hours}:{minutes}:{seconds}'
 
 
 while True:
-    input_list = list(map(int, sys.stdin.readline().split()))
-    M, A, B = input_list[0], input_list[1], input_list[2]
-
+    M, A, B = map(int, sys.stdin.readline().split())
     # End condition
     if M == 0 and A == 0 and B == 0:
         break
